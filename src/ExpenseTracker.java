@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Map;
 
 public class ExpenseTracker {
-     private List<Expense> expenses;
+    private List<Expense> expenses;
     private static final String FILE_NAME = "expenses.txt";
 
     public ExpenseTracker() {
@@ -60,7 +60,7 @@ public class ExpenseTracker {
         }
     }
 
-    // Save expenses to a file
+    // Save expenses to a file || Stretch Challenge
     private void saveExpenses() {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(FILE_NAME))) {
             for (Expense e : expenses) {
@@ -72,7 +72,7 @@ public class ExpenseTracker {
         }
     }
 
-    // Load expenses from a file
+    // Load expenses from a file || Stretch Challenge
     private void loadExpenses() {
         try (BufferedReader reader = new BufferedReader(new FileReader(FILE_NAME))) {
             String line;
