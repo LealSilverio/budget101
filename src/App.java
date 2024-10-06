@@ -24,7 +24,7 @@ public class App {
                     System.out.print("Enter amount: ");
                     double amount = scanner.nextDouble();
                     scanner.nextLine(); // consume newline
-                    System.out.print("Enter date (MM-DD-YYYY): ");
+                    System.out.print("Enter date (MM/DD/YYYY): ");
                     String date = scanner.nextLine();
                     tracker.addExpense(category, amount, date);
                     break;
